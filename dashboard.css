@@ -1,0 +1,101 @@
+:root{
+    --bgcolor:#2026B0;
+    --header-color:#1b1b1b;
+    --footer-color:#1E4682;
+    --btn-color:#F96355;
+    --font-color:#FFFFFF;
+}
+header{
+    height:55px;
+    background-color:var(--bgcolor);
+}
+body{
+   
+    background-color:var(--bgcolor) !important;
+}
+#logo h1{
+    font-weight:700;
+    color:var(--btn-color);
+    margin-left:20px;
+}
+nav{
+    float: right;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+nav ul li{
+    margin:0px 20px;
+    padding: 5px 8px;
+    /*border-radius:20px;*/
+    border:2.5px solid var(--btn-color);
+
+}
+nav ul li a{
+    font-size:18px;
+    color:var(--font-color);
+    font-weight:500;
+}
+a:hover{
+    text-decoration:none !important;
+    color:var(--btn-color) !important;
+   
+}
+.landing-page div h5{
+    font-size:17px;
+    font-weight:500;
+    color:var(--font-color);
+}
+.landing-page div h1{
+    font-size:58px;
+    font-weight:700;
+    margin:20px 0px;
+    color:var(--font-color);
+}
+.landing-page div button{
+    background-color:var(--bgcolor);
+    color:white;
+    font-size:20px;
+    border:none;
+    height:3.5rem;
+    font-weight:500;
+    width:200px;
+    margin-top:50px;
+    border:2.5px solid var(--btn-color);
+}
+#landing_image{
+    animation-name:jump;
+    animation-duration: 2.5s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    transition: all 1s ease 0s;
+
+    
+}
+@keyframes jump{
+    0% {
+        transform: translate(0px, 0px);
+    }
+    
+    20% {
+        transform: translate(0px, 4px);
+    }
+    40% {
+        transform: translate(0px, 8px);
+    }
+    60% {
+        transform: translate(0px, 0px);
+    }
+    80% {
+        transform: translate(0px, -4px);
+    }
+    100% {
+        transform: translate(0px, -8px);
+    }
+}
