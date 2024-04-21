@@ -1,6 +1,6 @@
 <?php
     
-    include('teacher_middleware.php');
+    //include('teacher_middleware.php');
 
     include('../database/connection.php');
 

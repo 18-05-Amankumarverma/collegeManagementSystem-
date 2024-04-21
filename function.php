@@ -9,9 +9,7 @@ if(isset($_FILES["webcam"]["tmp_name"])){
     move_uploaded_file($tmpName,'img/' . $imageName);
 
     $date =  date("Y/m/d") . " & " . date("h:i:sa");
-    $j;
-    $j++;
-    $query = "INSERT INTO tb_image VALUES('$j','$date','$imageName')";
+    $query = "INSERT INTO tb_image VALUES('','$date','$imageName')";
     mysqli_query($conn,$query);
 }
 

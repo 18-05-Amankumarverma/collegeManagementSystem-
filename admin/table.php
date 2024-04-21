@@ -66,9 +66,7 @@
   		                    <?php
                                 $i = 1;
                                 $rows = mysqli_query($conn,"SELECT * FROM tb_image ORDER BY id DESC");
-                                //location
-                                    $rows1 = mysqli_query($conn,"SELECT logedUserLocation FROM userloginrecord")
-                                //end
+                              
                             ?>
 
                             <?php
@@ -78,7 +76,7 @@
                             <tr>
                                 <td><?php echo $i++; ?></td>
                                 <td><?php echo $row['date']; ?></td>
-                                <td><?php echo $userLocation ; ?></td>
+                                <td>undefined</td>
                                 <td>
                                     <img src="../img/<?php echo $row['imageName'] ; ?>"/>
                                 </td>
