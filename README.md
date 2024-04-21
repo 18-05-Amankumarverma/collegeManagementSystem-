@@ -30,7 +30,7 @@ College Management System is a  Software which provide Services which helps coll
 ## Author's
 
 ### BackEnd Developer
-- [Aman Kumar Verma](itsalverma.vercel.app)
+- [Aman Kumar Verma](itsakrverma.vercel.app)
 - [Prince Kumar]()
 
 ### Designer and UI/UX Developer
