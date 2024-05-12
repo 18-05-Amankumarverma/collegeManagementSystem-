@@ -12,6 +12,7 @@ College Management System is a  Software which provide Services which helps coll
 2. webcam.js
 3. Email.js
 4. PHP Mailer
+5. Email.js
 
 ## Application Used During Developement
 1. Xampp 
@@ -31,11 +32,6 @@ College Management System is a  Software which provide Services which helps coll
 
 ### BackEnd Developer
 - [Aman Kumar Verma](itsamankrverma.vercel.app)
-- [Prince Kumar]()
-
 ### Designer and UI/UX Developer
-- [Aditya Shukla]()
+- [Aman Kumar Verma]()
 
-----------
-### Work Done the Guidence of
-- 
