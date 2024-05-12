@@ -25,7 +25,7 @@ College Management System is a  Software which provide Services which helps coll
 > It need latest versions for Smooth Operation.
 
 ## Version
-- **v1.0.0**
+- **v2.2.2**
 > This is the Stable Version without any Bug Our Team is Currently Working on new Version of this Website.
 
 ## Author's
