@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>choose payment option </title>
+    <style type="text/css">
+        :root {
+            --bg-color: ;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(22, 165, 217);
+        }
+
+        .form-container {
+            max-width: 350px;
+            margin:100px auto;        
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+
+        }
+        div img{
+            height:200px;
+            width:200px;
+            mix-blend-mode: multiply;
+        }
+        .status{
+            font-size:25px;
+            font-weight:500;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="form-container">
+                        <div>
+                            <img src="tick.jpg" alt=""/>
+                        </div>
+                        <div class="status">
+                            Payment Done Successfully
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+
+        // Redirect user to Dashboard
+
+    
+        setTimeout(function redirectUser(){
+            window.location.href = "choosePaymentOption.html";
+        },4000);
+
+        
+
+    </script>
+
+</body>
+
+</html>

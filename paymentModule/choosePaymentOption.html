@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>choose payment option </title>
+    <style type="text/css">
+        :root {
+            --bg-color: ;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(22, 165, 217);
+        }
+
+        .form-container {
+            max-width: 350px;
+            margin: 50px auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background-color: rgb(237, 234, 234);
+            box-shadow: 0px 0px 5px #000;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: #1b1b1b;
+            font-weight: 500;
+            margin: 20px 0px;
+        }
+
+        label {
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        input {
+            height: 35px;
+
+        }
+
+        select {
+            height: 35px;
+            border: none;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        option {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .selectCard {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            height: 14px;
+        }
+
+        input[type="submit"] {
+            font-weight: 700;
+            color: white;
+            background-color: rgb(29, 29, 85);
+            margin-top: 20px;
+        }
+
+        input {
+            border: none;
+        }
+
+        .paymentName {
+            font-size: 14px;
+            color: 500;
+            color: #1b1b1b;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="form-container">
+                        <form id="paymentDetails">
+                            <div style="width:100%;">
+                                <h3>Payment Plan</h3>
+                                <select name="paymentPlan" style="width:100%;">
+                                    <option value="Free">Free $0</option>
+                                    <option value="Gold $30">Gold $30</option>
+                                    <option value="Platinium $50">Platinium $50</option>
+                                </select>
+                            </div>
+
+                            <div style="margin:10px 0px;">    
+                                <h3>Personal Details</h3>
+                                <div style="display:flex;margin-bottom:15px;">
+                                    <label for="" style="font-size:14px;">Name*
+                                        <input type="text" name="username" style="margin-right:5px;width:96%;" />
+                                    </label>
+                                    <label for="" style="font-size:14px;">Surname*
+                                        <input type="text" name="surname" style="margin-left:5px;width: 96%;" />
+                                    </label>
+                                </div>
+                                <label for="" style="font-size:14px;">Email*
+                                    <input type="text" name="emailId" style="width:100%" />
+                                </label>
+                            </div>
+
+                            <div> 
+                                <h3>Personal Option</h3>
+                                <label for="credit" class="selectCard">
+                                    <input type="checkbox" value="creditCard" name="creditCard" />
+                                    <span class="paymentName">Credit Card</span>
+                                </label>
+                                <label for="paypal" class="selectCard">
+                                    <input type="checkbox" value="payPal" name="payPal" />
+                                    <span class="paymentName">Paypal</span>
+                                </label>
+                            </div>
+
+                            <div style="display:flex;align-items:center;margin-top:15px;">
+                                <input type="checkbox" name="termsAndConditions" id="acceptCondition" />
+                                <span style="font-size:10px;font-weight:500;margin-left:10px;">Accept our <a
+                                        href="#">Terms and Conditions and Privacy Policy</a>.</span>
+                            </div>
+
+                            <input type="submit" value="Move to Next Step" name="moveToNext" id="submit" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+
+        var paymentData = [];
+        var submit = document.getElementById("submit");
+
+        submit.onclick = function payment(e) {
+
+            e.preventDefault();
+
+            var paymentPlan = document.forms["paymentDetails"]["paymentPlan"];
+            var name = document.forms["paymentDetails"]["username"];
+            var surname = document.forms["paymentDetails"]["surname"];
+            var emailId = document.forms["paymentDetails"]["emailId"];
+
+            var acceptCondition = document.getElementById("acceptCondition");
+          
+
+            if (paymentPlan.value != 0 && name.value != 0 && surname.value != 0 && emailId != 0 && acceptCondition.checked == true) {
+
+                paymentData.push(paymentPlan.value);
+                paymentData.push(name.value);
+                paymentData.push(surname.value);
+                paymentData.push(emailId.value);
+
+                console.log(JSON.stringify(paymentData));
+
+                localStorage.setItem("paymentDetails", JSON.stringify(paymentData));
+
+                window.location.href = "makePayment.html";
+            }
+
+            else {
+                console.log("fill full form collectly");
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

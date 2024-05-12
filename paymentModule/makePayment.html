@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>choose payment option </title>
+    <style type="text/css">
+        :root {
+            --bg-color: ;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(22, 165, 217);
+        }
+
+        .form-container {
+            max-width: 350px;
+            margin: 50px auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background-color: rgb(237, 234, 234);
+            box-shadow: 0px 0px 5px #000;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: #1b1b1b;
+            font-weight: 500;
+            margin: 20px 0px;
+        }
+
+        label {
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        input {
+            height: 35px;
+
+        }
+
+        select {
+            height: 35px;
+            border: none;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        option {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .selectCard {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            height: 14px;
+        }
+
+        input[type="submit"] {
+            font-weight: 700;
+            color: white;
+            background-color: rgb(29, 29, 85);
+            margin-top: 20px;
+        }
+
+        input {
+            border: none;
+        }
+
+        .paymentName {
+            font-size: 14px;
+            color: 500;
+            color: #1b1b1b;
+            padding-left: 10px;
+        }
+
+        #instructions {
+            max-width: 350px;
+            margin: 0px auto;
+            background-color: rgb(237, 234, 234);
+            display: flex;
+            height: 100px;
+            border-radius:10px;
+        }
+
+        #sidebar {
+            height: 100%;
+            width: 8px;
+            background-color: yellow;
+            border-radius:10px 0px 0px 10px;
+        }
+
+        ol li {
+            font-size: 12px;
+        }
+
+        div span {
+            
+            display: block;
+            margin-left: 28px;
+            margin-top: 10px;
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="instructions">
+        <div id="sidebar"></div>
+        <div>
+            <span>Instructions</span>
+            <ol>
+                <li>Card No. 5305 0682 0070 7014</li>
+                <li>Expiry Date 10/2024</li>
+                <li>CVV No. 242</li>
+            </ol>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="form-container">
+                        <form id="paymentDetails">
+                            <div style="width:100%;">
+                                <h3>Payment Plan</h3>
+                                <select name="paymentPlan" style="width:100%;">
+                                    <option value="Free">Free $0</option>
+                                    <option value="Gold $30">Gold $30</option>
+                                    <option value="Platinium $50">Platinium $50</option>
+                                </select>
+                            </div>
+
+                            <div style="margin:10px 0px;">
+                                <h3>Personal Information</h3>
+                                <label for="" style="font-size:14px;">Card Number*
+                                    <input type="number" name="cardNumber" style="width:100%" />
+                                </label>
+                                <label for="" style="font-size:14px;display:block;margin:10px 0px;">Card Holder Name*
+                                    <input type="text" name="cardHolderName" style="width:100%" />
+                                </label>
+                                <div style="display:flex;margin-bottom:15px;">
+                                    <label for="" style="font-size:14px;">Expiry*
+                                        <input type="number" name="expiryDate" style="margin-right:5px;width:96%;" />
+                                    </label>
+                                    <label for="" style="font-size:14px;">CVV*
+                                        <input type="number" name="cvv" style="margin-left:5px;width: 96%;" />
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div style="display:flex;align-items:center;margin-top:15px;">
+                                <input type="checkbox" name="termsAndConditions" />
+                                <span style="font-size:10px;font-weight:500;margin-left:10px;">Accept our <a
+                                        href="#">Terms and Conditions and Privacy Policy</a>.</span>
+                            </div>
+
+                            <input type="submit" value="Confirm Payment" name="moveToNext" id="submit"  />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var submit = document.getElementById("submit");
+        var paymentPlan = document.forms["paymentDetails"]["paymentPlan"];
+        var cardHolderName = document.forms["paymentDetails"]["cardHolderName"];
+        
+        var parsePaymentData = JSON.parse(localStorage.getItem("paymentDetails"));
+        paymentPlan.value = parsePaymentData[0];
+        cardHolderName.value = parsePaymentData[1] +" "+ parsePaymentData[2];
+
+        // Card Details use these details for further process
+
+        const cardData = {
+            cardNo:"5305 0682 0070 7014",
+            expiryDate:"10/2024",
+            cvvNo:"242"
+        }
+
+        // ConfirmPayment function Call on Submit
+
+        submit.onclick = function confirmPayment(e){
+        
+            e.preventDefault();
+
+            var cardNumber = document.forms["paymentDetails"]["cardNumber"];
+            var expiryDate = document.forms["paymentDetails"]["expiryDate"];
+            var cvv = document.forms["paymentDetails"]["cvv"];
+
+            if(cardNumber.value === cardData.cardNo && expiryDate.value === cardData.expiryDate && cvv.value === cardData.cvvNo){
+                
+                console.log("success");
+
+                window.location.href = "paymentSuccess.html";
+            }   
+            else{
+                console.log("paymentfailed");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

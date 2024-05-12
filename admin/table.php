@@ -78,7 +78,7 @@
                                 <td><?php echo $row['date']; ?></td>
                                 <td>undefined</td>
                                 <td>
-                                    <img src="../img/<?php echo $row['imageName'] ; ?>"/>
+                                    <img src="../usersPhotoCollection/<?php echo $row['imageName'] ; ?>"/>
                                 </td>
                             </tr>
                             <?php endforeach ;?>
