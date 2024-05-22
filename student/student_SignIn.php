@@ -1,10 +1,20 @@
 <?php
 include("../database/connection.php");
 
+function dataSanitize($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    
+    return $data;
+
+}
+
 if(isset($_POST['submit'])){
 
-$student_name = $_POST['student_name'];
-$student_password = $_POST['student_password'];
+$student_name = dataSanitize($_POST['student_name']);
+$student_password = dataSanitize($_POST['student_password']);
 
 
 $sql = "select username , password from student_login where username = '$student_name' and password = '$student_password' ";
@@ -92,6 +102,24 @@ else{
             margin-bottom:10px;
             border-radius:4px;
             overflow:hidden;
+            transition: all .8s;
+        }
+        .warningMessageContainer {
+            animation-name: sweetAlertAnimation;
+            animation-duration: .8s;
+            animation-delay: .1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes sweetAlertAnimation {
+            to {
+                transform: translateY(8px);
+            }
+
+            from {
+                transform: translateY(0px);
+            }
         }
         #successMessage{
             display:none;
@@ -316,6 +344,8 @@ else{
             alertMessage.style.display = "block";
 
         }
+
+       
         
     </script>
 

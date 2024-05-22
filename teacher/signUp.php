@@ -1,10 +1,20 @@
 <?php
      include("../database/connection.php");
      
+     function dataSanitize($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    
+    return $data;
+
+}
+
      if(isset($_POST['submit'])){
 
-        $teacher_name = $_POST['teacher_name'];
-        $teacher_password = $_POST['teacher_password'];
+        $teacher_name = dataSanitize($_POST['teacher_name']);
+        $teacher_password = dataSanitize($_POST['teacher_password']);
 
 
         $sql = "insert into teacher_login (teacher_name,teacher_password) 

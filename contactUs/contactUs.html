@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: "BBC Reith Serif", Helvetica, Arial, sans-serif;
+        }
+
+        .parent {
+            height: 100vh;
+            width: 100%;
+            background-color: purple;
+        }
+        .parent .child{
+            display:flex;
+        }
+        .left{
+            color:white;
+            background-color:#232222;
+            width:50%;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+        }
+        .inner-left{
+            width:100%;
+            padding:50px;
+        }
+        .inner-left h1{
+            font-size:50px;
+            font-weight:500;
+        }
+        .inner-left p{
+            padding-top:7px;
+            font-size:15px;
+            font-weight:500;
+        }
+        input{
+            height:50px;
+            width:100%;
+            border:none;
+            border-bottom:1px solid white;
+            color:white;
+            background-color:#232222;
+        }
+        input:focus{
+            outline:none;
+        }
+        form{
+            margin-top:40px;
+        }
+        form input{
+            margin:12px 0px;
+        }
+        .right{
+            color:#1b1b1b;
+            background-color:white;
+            width:50%;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .inner-right{
+        }
+        .inner-right h2{
+            padding:15px 0px;
+        }
+        .inner-right p{
+            padding:4px 0px;
+        }
+        .inner-right h3{
+            padding:18px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="left">
+                <div class="inner-left">
+                    <div>
+
+                        <h1>Just say hi!</h1>
+                        <p>Tell us about yourself and we'll contact you as soon.</p>
+                    </div>
+                    <div>
+                        <form action="">
+                            <div style="display:flex;gap:20px;">
+                                <input type="text" placeholder="First Name">
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div style="display:flex;gap:20px ;">
+                                <input type="text" placeholder="Email id">
+                                <input type="number" placeholder="Phone No">
+                            </div>
+                            
+                            <input type="text" placeholder="Description"/>
+                            <input type="submit" value="SUBMIT" style="width:180px;height:50px;background-color:white;color:#1b1b1b;font-weight:600;float:right;margin-top:40px;"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="inner-right">
+                    <div>
+                        <h2>Contact Information</h2>
+                        <p style="padding:12px 0px;">523 Block A,<br/> new baradwari sakchi <br/>Jamshedpur 831001</p>
+                        <p>Email Us: akverma2017@gmail.com</p>
+                        <p>call Us:9000xxxxxxx</p>
+                        <div>
+                            <h3>Follow Us On</h3>
+                            <ul>
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -2,6 +2,7 @@
     --headingColor: #B80000;
     --fontColor: #202224;
     --fontFamily: "BBC Reith Serif", Helvetica, Arial, sans-serif;
+    --second-color:#6147C6;
 }
 * {
     margin: 0px;
@@ -41,7 +42,7 @@ nav ul li {
     font-weight: 600;
 }
 nav ul li  a{
-    color:#1b1b1b;
+    color:#0e0d0d;
     
 }
 nav ul li a:hover{
@@ -53,7 +54,7 @@ nav ul li a:hover{
 .nestedMenu {
     display: block;
     position: absolute;
-    background-color:rgb(27, 27, 27);
+    background-color:rgb(206, 204, 204);
     height: 150px;
     width: 130px;
     text-align: center;
@@ -70,7 +71,9 @@ nav ul li a:hover{
     padding:10px 0px;
     border-bottom:1px solid #1b1b1b;
 }
-
+#hamberger-menu{
+    display:none;
+}
 .landingPageContainer {
     padding: 50px 0px;
 }
@@ -90,7 +93,7 @@ nav ul li a:hover{
     padding: 15px 40px;
     font-weight: 600;
     color: #fff;
-    background-color: #EA78F9;
+    background-color:#ea78f9;
 }
 
 .laptopScreen {
@@ -172,6 +175,11 @@ input[type="checkbox"]:checked~.circle {
         background-color: #060E25;
         margin: 0px;
         padding: 7px 0px;
+    
+        
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     }
 
     nav {
@@ -197,8 +205,14 @@ input[type="checkbox"]:checked~.circle {
         font-size: 20px;
         margin: 20px 0px;
     }
+    nav ul li a {
+        color:white;
+    }
+    #hamberger-menu{
+        display:inline-block;
+    }
     #menu{
-        display:block;
+        display:none;
     }
     #dayNight {
 
@@ -210,7 +224,6 @@ input[type="checkbox"]:checked~.circle {
     #dayNight .insideBar {
         height: 40px;
         border-radius: 20px;
-        width: 120px;
         background-color: white;
         position: relative;
     }
@@ -260,13 +273,14 @@ input[type="checkbox"]:checked~.circle {
     padding:40px 0px;
 }
 .pricing .priceBoxOne{
-    background-color:#F5F1F1;
     text-align:left;
     margin-bottom:40px;
+    
 }
 .pricing .priceBoxOne div{
     background-color:#F5F1F1;
     padding:20px;
+    border-radius:20px;
 }
 .pricing .priceBoxOne div h4{
     padding:20px 0px;
@@ -311,7 +325,7 @@ footer {
     color: white;
     width: 100%;
     font-weight: 500;
-    padding: 30px 40px;
+    padding: 30px 10px;
 
 }
 
@@ -405,7 +419,12 @@ footer .container-fluid .row {
     footer {
         position: unset;
     }
-
+    footer .container-fluid{
+        width: 100%;
+        padding: 30px 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     footer .container-fluid .row {
         display: block;
     }

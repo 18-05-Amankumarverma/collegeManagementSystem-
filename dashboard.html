@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <title>Quantum-Sys. (College Managment System)</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
@@ -16,6 +17,61 @@
             });
         })();
     </script>
+    <style>
+        .parent-cookie {
+            font-family: "BBC Reith Serif", Helvetica, Arial, sans-serif;
+            width: 400px;
+            text-align: justify;
+            background-color: #f4eded;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px #1b1b1b;
+            position: absolute;
+            top:400px;
+            right: 10px;
+
+        }
+
+        .child-cookie {
+            padding: 15px;
+        }
+
+        .child-cookie h4 {
+            font-size: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .child-cookie img {
+            height: 40px;
+            width: 40px;
+            margin-left: 10px;
+        }
+
+        .child-cookie p {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .accept {
+            background-color: rgb(38, 38, 209);
+            color: white;
+        }
+
+        .manage {
+            background-color: white;
+        }
+
+        .accept,
+        .manage {
+            font-size: 14px;
+            font-weight: 600;
+            width: 100%;
+            padding: 10px 0px;
+            border: none;
+        }
+    </style>
 </head>
 
 <body id="body">
@@ -27,30 +83,33 @@
                         <h4>Quantum-Sys.</h4>
                     </div>
                     <div id="hamberger">
-                        <input type="checkbox" id="menu"/>
+                        <label for="menu" id="hamberger-menu"><img
+                                src="https://www.svgrepo.com/show/493681/hamburger-menu-mobile.svg"
+                                style="height:50px;width:50px;" alt=""></label>
+                        <input type="checkbox" id="menu" />
                     </div>
                 </div>
                 <div class="col-md-8 col-12" style="margin:0px;padding:0px;">
                     <nav>
                         <ul>
-                            <li>Dashboard</li>
+                            <li><a href="dashboard.html">Dashboard</a></li>
                             <li><a href="admin/admin_login.php">Admin</a></li>
                             <li><a href="teacher/signIn.php">Teacher</a></li>
                             <li><a href="student/student_SignIn.php">Student</a></li>
                             <li style="position:relative;" id="nestedListActivator">Extra
                                 <ul class="nestedMenu">
                                     <li><a href="data_files_show.php">File</a></li>
-                                    <li>Blog</li>
-                                    <li>News</li>
+                                    <li><a href="news.html">News</a></li>
+                                    <li><a href="Blog.html">Blog</a></li>
                                 </ul>
                             </li>
-                            <li>Contact</li>
+                            <li><a href="contactUs/contactUs.html">Contact</a></li>
                             <li>
                                 <div id="dayNight">
                                     <div class="insideBar">
                                         <label for="dayNightCheckbox">
                                             <input type="checkbox" id="dayNightCheckbox" />
-                                            <div class="circle"> </div>
+                                            <div class="circle"></div>
                                         </label>
                                     </div>
                                 </div>
@@ -67,12 +126,17 @@
             <div class="row  landingPage">
                 <div class="col-md-12 col-12" style="margin-bottom:20px;">
                     <h1>We Provide Software for Colleges</h1>
-                    <h1>Which Provide 2x <span style="display:inline-block;color:#ea78f9;">Optimization</span></h1>
+                    <h1>Which Provide 2x <span
+                            style="display:inline-block;color:#ea78f9;position: relative;">Optimization<img
+                                src="image/doodles02.png" alt=""
+                                style=" position: absolute;width: 503px;left: -50px;height: 176px;top: -50px;"></span>
+                    </h1>
                 </div>
                 <div class="col-md-12 col-12 paragraph">
                     <div>
-                        <p>Our College Management Software's is a Cloud based Management Software which is the part of our SAAS products<br />
-                            We help you to automate everything with this soaftware which make you More Productive.</p>
+                        <p>Our College Management Software's is a Cloud based Management Software which is the part of
+                            our SAAS products<br />
+                            We help you to automate everything with this Software which make you More Productive.</p>
                     </div>
                 </div>
                 <div class="col-md-12 col-12">
@@ -93,6 +157,16 @@
                         <video src="video/video.mp4" autoplay muted loop></video>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="company-that-use-our-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12"></div>
             </div>
         </div>
     </section>
@@ -236,8 +310,31 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
 
+    <!--animation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"
+        integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
     <!--mail service-->
     <script>
+
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('body'),
+            smooth: true
+        });
+
+        scroll.on('call',()=>{
+            console.log("run");
+        })
+    </script>
+    <script>
+
+
         var newsletter = document.getElementById("newsLetter");
         var newsLetterInput = document.forms["newsletter"]["newsLetterSubscribeUserEmailId"];
 
@@ -266,6 +363,42 @@
                     console.log('FAILED...', error);
                 });
         }
+
+        var body = document.querySelector("body");
+
+        function popUpCookie() {
+            var parentCookie = document.createElement("div");
+            parentCookie.setAttribute("class", "parent-cookie");
+            body.appendChild(parentCookie);
+            parentCookie.innerHTML = `
+        <div class="child-cookie">
+            <h4>Want a Cookie? <img src="https://cdn-icons-png.flaticon.com/512/6122/6122198.png" alt="cookie"/></h4>
+            <p>We and Selected third parties use Cookies or similar technolgies as specified in the <a href="https://www.termsfeed.com/live/5661b033-6dbf-4a38-a1aa-44fa2eead298">Cookie
+                    Policy.</a></p>
+            <p>You can Consent to the use of such technolgies by using the "Accpet" button .</p>
+            <div class="terms-conditions" style="font-size:12px;display:flex;align-items:center;margin-bottom:5px">
+                <input type="checkbox" style="display:inline-block;" id="termsAndConditions"/><a href="cookies/termsAndConditions.html" style="padding-left:10px;text-decoration:none;font-weight:600">Accept our Terms and Conditions</a>    
+            </div>
+            <button class="accept">Accept all Cookies</button>
+            <button class="manage">Manage Cookies</button>
+        </div>`;
+
+            var accept = document.querySelector(".accept");
+            var termsAndConditions = document.getElementById("termsAndConditions");
+
+            accept.onclick = () => {
+                if (termsAndConditions.checked == true) {
+                    parentCookie.style.display = "none";
+                }
+                else {
+                    console.log("not checked");
+                }
+            }
+
+        }
+
+        setTimeout(popUpCookie, 6000);
+
 
     </script>
 

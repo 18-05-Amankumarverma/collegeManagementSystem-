@@ -15,6 +15,7 @@ var newsLetterInput = document.getElementById("newsLetterInput");
 
 dayNightCheckbox.onclick = function changeWebsiteColor() {
 
+
     if (dayNightCheckbox.checked == true) {
         body.style.backgroundColor = "#242424";
         body.style.color = "#fff";
@@ -27,9 +28,12 @@ dayNightCheckbox.onclick = function changeWebsiteColor() {
             priceBoxOne[i].style.backgroundColor = "#1b1b1b";
             priceBoxOneButton[i].style.backgroundColor = "#242424";
         }
-        for(let i=0;i<navUlLiA.length;i++){
-            navUlLiA[i].style.color = "#fff";
+
+        for(let g=0;g<navUlLiA.length;g++){
+            navUlLiA[g].style.color = "white";
         }
+
+
     }
     else {
 
@@ -44,8 +48,10 @@ dayNightCheckbox.onclick = function changeWebsiteColor() {
             priceBoxOne[i].style.backgroundColor = "#F5F1F1";
             priceBoxOneButton[i].style.backgroundColor = "#060E25";
         }
-        for(let i=0;i<navUlLiA.length;i++){
-            navUlLiA[i].style.color = "#212529";
+
+        
+        for(let g=0;g<navUlLiA.length;g++){
+            navUlLiA[g].style.color = "#1b1b1b";
         }
 
     }
