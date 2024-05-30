@@ -1,8 +1,12 @@
 <?php
 
-//  include('admin_middleware.php');
-
+//include('admin_middleware.php');
 require '../function.php';
+
+if(isset($_GET['id'])){
+    $id = $_GET['id'];
+    $row = mysqli_query($conn,"DELETE FROM tb_image WHERE id = '$id' "); // data deleted
+}
 
 
 ?>
@@ -228,23 +232,26 @@ require '../function.php';
                                     <?php
                                         
                                         $i = 1;
-                                        $rows = mysqli_query($conn,"SELECT * FROM tb_image ORDER BY id DESC");
+                                        $rows = mysqli_query($conn,"SELECT * FROM tb_image");
                               
                                     ?>
 
                                     <?php
 				                        foreach($rows as $row):
+                                           
 		                            ?>
                                     <tr>
                                         <td><input type="checkbox"></td>
-                                        <td><?php echo $i++; ?></td>
+                                        <td><?php echo $i++ ; ?></td>
                                         <td><?php echo $row['date']; ?></td>
                                         <td>undefined</td>
                                         <td>
                                             <img src="../usersPhotoCollection/<?php echo $row['imageName'] ; ?>" style="height:100px;width:100px"/>
                                         </td>
                                         <td>
-                                            <button style="cursor: pointer;;height:30px;width:80px;border:none;background-color:red;border:.8px solid black;font-weight:600">Delete</button>
+                                            <button style="cursor: pointer;;height:30px;width:80px;border:none;background-color:red;border:.8px solid black;font-weight:600">
+                                               <a href="<?php echo "table.php?id=" . $row['id'] ; ?>">Delete</a>
+                                            </button>
                                         </td>
                                     </tr>
                                     <?php endforeach ;?>
@@ -257,11 +264,11 @@ require '../function.php';
             </div>
         </div>
     </div>
-
+    
     <script>
         var displayName = document.getElementById("displayName");
         function setName(){
-            displayName.value = localStorage.getItem("adminName");
+            displayName.textContent = localStorage.getItem("adminName");
         }
         setName();
     </script>

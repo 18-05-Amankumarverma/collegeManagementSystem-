@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>News</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <h1>News</h1>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="search-container">
+                        <input type="text" name="search" placeholder="Search for topics, locations & sources" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="search-btn">
+                        <input type="submit" value="Search" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="links-container">
+                        <div class="links">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li>For you</li>
+                                <li>Following</li>
+                                <li>News Showcase</li>
+                                <li>Inida</li>
+                                <li>World</li>
+                                <li>Local</li>
+                                <li>Business</li>
+                                <li>Technology</li>
+                                <li>Entertainment</li>
+                                <li>Sports</li>
+                                <li>Science</li>
+                                <li>Health</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="first-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <div class="left-side">
+                        <div>
+                            <h2>Top Stories ></h2>
+                            <div class="flex-box">
+                                <div class="image-container">
+                                    <img src="https://th-i.thgim.com/public/incoming/spmp4z/article68214260.ece/alternates/LANDSCAPE_1200/PTI05_24_2024_000324A.jpg"
+                                        alt="">
+                                    <h4>Pune Porsche car crash: Teenager’s grandfather held for ‘wrongful confinement’
+                                        of family driver....</h4>
+                                    <span>1 hour ago</span>
+                                </div>
+                                <div class="side-content">
+                                    <div class="content-one">
+                                        <span><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                                alt="timesOfIndia">The Times of India</span>
+                                        <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                            driver to take blame
+                                        </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                    <div class="content-one">
+                                        <span><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ZGf8GhDP_4FtHZ9K_XttEZDmFX4f3HukFsM1jYoOBxcSFU_yN8nKRVhSaK70pWeQdhk&usqp=CAU"
+                                                alt="bussinessToday">The Times of India</span>
+                                        <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                            driver to take blame
+                                        </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                    <div class="content-one">
+                                        <span><img
+                                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzg3Nzc3Nzc3Nzc2Ny00NTU3LTc1Ny0tNTU1Ny0yNTU1LTc1LTU1NS81Nf/AABEIABwAHAMBEQACEQEDEQH/xAAYAAADAQEAAAAAAAAAAAAAAAAEBgcFAv/EACsQAAIBAwIFAgYDAAAAAAAAAAECAwQFEQAxBhIhQWETIhRRcYGh4RUkM//EABkBAAMBAQEAAAAAAAAAAAAAAAQFBgMCAf/EACYRAAICAgAFBAMBAAAAAAAAAAECAAMEEQUSITFBIlGRsTNhgTL/2gAMAwEAAhEDEQA/AKDxbxHVU0j0dqR+dP8AaoVOYRnGeUds465O2jcXHVvU/wARFxLiFiE10Dt3PtEOeWpndnqJJ5GU+5nZmIPnO2mahV/yJMu1jnmckmbFput8tTK6R1csHeKVHKsPBO320PbVTZ5G4wxsnNxiDolf3KTb6yK4UiVMOQrdCrDqpHQg+QdKXUo2pW0XC5A6mItimmq6K8TTVvN/XmdaUMfaWySxG3c6YXKEZQB/ZO4TtZVazN4PSGTUY/h6aGjmhmkku2Q4U8uck4bO+NcB/WS3gQhqdUKqEEl5xVXGuprTLIldUNIameIyOQThEOMDGB1669RFNgGvAnNl9yY5bmJO2HxMqwXmpoKSSKMsQ0pc/UgaIupV23F+FmPVWR36wmvWHh64XGnqIKhkrOsTRMFBjJyVyfPQ+APnrNN3KpB7fc3tCYNtiuDpvqARX94rd8MsC+qtV8TFLzH2NnOMd/3rVsYc299Nagq8RK1cnL13sQyq4loqiLme1kS+5inrH0S7DBYqN9ZrisD0bpCLOJU2L+Pr7eNmMPC9hC2sS3KPNRUOZSp6coOMD8Z++hcjI9elPaNOH4Oqdv3PWb1yt1Jc4DBWwiRNwe6n5g9tDV2Mh2pjK/HrvTlsG5MeILXDba/0IXlZc7uQT+ANOaLWddmR2ZipTZyr2jbwvw5b0hjrpFeabdfVIKp9BjQORkOSVj3h3DaABYRsxsHfQUdz/9k="
+                                                alt="hindustanNews">The Times of India</span>
+                                        <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                            driver to take blame
+                                        </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-box" style="border-top:1px solid white;border-radius:0px;margin:15px 0px;">
+                                <div class="image-container">
+                                    <img src="https://c.ndtvimg.com/2024-05/9tgcnhgg_arvind-kejriwal_625x300_25_May_24.jpg?im=FaceCrop,algorithm=dnn,width=650,height=400"
+                                        alt="">
+                                    <h4>"Voted Against Inflation...": Arvind Kejriwal's Post With Inked Finger....</h4>
+                                    <span>1 hour ago</span>
+                                </div>
+                                <div class="side-content">
+                                    <div class="content-one">
+                                        <span><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                                alt="timesOfIndia">The Times of India</span>
+                                        <p>दिल्‍ली में वोटिंग की धीमी रफ्तार क्‍या दे रही संदेश... जानें कन्‍हैया,
+                                            बांसुरी स्‍वराज समेत 7 सीटों पर अब तक कितने पड़े वोट
+                                        </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                    <div class="content-one">
+                                        <span><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ZGf8GhDP_4FtHZ9K_XttEZDmFX4f3HukFsM1jYoOBxcSFU_yN8nKRVhSaK70pWeQdhk&usqp=CAU"
+                                                alt="bussinessToday">The Times of India</span>
+                                        <p>दिल्लीः गठबंधन दिलाएगा AAP-कांग्रेस को सीट या बीजेपी फिर करेगी 'क्लीन स्वीप'?
+                                        </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                    <div class="content-one">
+                                        <span><img
+                                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzg3Nzc3Nzc3Nzc2Ny00NTU3LTc1Ny0tNTU1Ny0yNTU1LTc1LTU1NS81Nf/AABEIABwAHAMBEQACEQEDEQH/xAAYAAADAQEAAAAAAAAAAAAAAAAEBgcFAv/EACsQAAIBAwIFAgYDAAAAAAAAAAECAwQFEQAxBhIhQWETIhRRcYGh4RUkM//EABkBAAMBAQEAAAAAAAAAAAAAAAQFBgMCAf/EACYRAAICAgAFBAMBAAAAAAAAAAECAAMEEQUSITFBIlGRsTNhgTL/2gAMAwEAAhEDEQA/AKDxbxHVU0j0dqR+dP8AaoVOYRnGeUds465O2jcXHVvU/wARFxLiFiE10Dt3PtEOeWpndnqJJ5GU+5nZmIPnO2mahV/yJMu1jnmckmbFput8tTK6R1csHeKVHKsPBO320PbVTZ5G4wxsnNxiDolf3KTb6yK4UiVMOQrdCrDqpHQg+QdKXUo2pW0XC5A6mItimmq6K8TTVvN/XmdaUMfaWySxG3c6YXKEZQB/ZO4TtZVazN4PSGTUY/h6aGjmhmkku2Q4U8uck4bO+NcB/WS3gQhqdUKqEEl5xVXGuprTLIldUNIameIyOQThEOMDGB1669RFNgGvAnNl9yY5bmJO2HxMqwXmpoKSSKMsQ0pc/UgaIupV23F+FmPVWR36wmvWHh64XGnqIKhkrOsTRMFBjJyVyfPQ+APnrNN3KpB7fc3tCYNtiuDpvqARX94rd8MsC+qtV8TFLzH2NnOMd/3rVsYc299Nagq8RK1cnL13sQyq4loqiLme1kS+5inrH0S7DBYqN9ZrisD0bpCLOJU2L+Pr7eNmMPC9hC2sS3KPNRUOZSp6coOMD8Z++hcjI9elPaNOH4Oqdv3PWb1yt1Jc4DBWwiRNwe6n5g9tDV2Mh2pjK/HrvTlsG5MeILXDba/0IXlZc7uQT+ANOaLWddmR2ZipTZyr2jbwvw5b0hjrpFeabdfVIKp9BjQORkOSVj3h3DaABYRsxsHfQUdz/9k="
+                                                alt="hindustanNews">The Times of India</span>
+                                        <p>Lok Sabha Chunav 2024 phase 6 Live: पश्चिम मेदिनीपुर में बवाल, BJP उम्मीदवार
+                                            का विरोध, सुबह 11 बजे तक 25.76% वोटिंग
+                                        </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-box" style="border-top:1px solid white;border-radius:0px;margin:15px 0px;">
+                                <div class="side-content" style="width:100%;">
+                                    <div class="content-one content-full">
+                                        <div class="left-flex">
+                                            <span><img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                                    alt="timesOfIndia">The Times of India</span>
+                                            <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                                driver to take blame
+                                            </p>
+                                            <span>2 hours ago</span>
+                                        </div>
+                                        <div class="right-flex">
+                                            <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/Jemco-1.jpg?w=600&ssl=1"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-one content-full">
+                                        <div class="left-flex">
+                                            <span><img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                                    alt="timesOfIndia">The Times of India</span>
+                                            <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                                driver to take blame
+                                            </p>
+                                            <span>2 hours ago</span>
+                                        </div>
+                                        <div class="right-flex">
+                                            <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/Jemco-1.jpg?w=600&ssl=1"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="right-side">
+                        <div>
+                            <h2>Top Stories ></h2>
+                            <div class="flex-box">
+                                <div class="side-content">
+                                    <div class="content-one">
+                                        <div class="left-flex">
+                                            <span><img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                                    alt="timesOfIndia">The Times of India</span>
+                                            <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                                driver to take blame
+                                            </p>
+                                            <span>2 hours ago</span>
+                                        </div>
+                                        <div class="right-flex">
+                                            <img src="https://www.designwall.com/wp-content/uploads/2015/06/Focus-News-Theme.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-one">
+                                        <div class="left-flex">
+                                            <span><img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                                    alt="timesOfIndia">The Times of India</span>
+                                            <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                                driver to take blame
+                                            </p>
+                                            <span>2 hours ago</span>
+                                        </div>
+                                        <div class="right-flex">
+                                            <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/IMG_2567.jpg?resize=768%2C512&ssl=1"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-one">
+                                        <div class="left-flex">
+                                            <span><img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                                    alt="timesOfIndia">The Times of India</span>
+                                            <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                                driver to take blame
+                                            </p>
+                                            <span>2 hours ago</span>
+                                        </div>
+                                        <div class="right-flex">
+                                            <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/Jemco-1.jpg?w=600&ssl=1"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="flex-box">
+                                <div class="side-content">
+                                    <div class="content-one">
+                                        <div class="left-flex">
+                                            <span>
+                                                <img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                                    alt="timesOfIndia"/>
+                                                    The Times of India
+                                            </span>
+                                            <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                                driver to take blame
+                                            </p>
+                                            <span>2 hours ago</span>
+                                        </div>
+                                        <div class="right-flex">
+                                            <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/tsdpl.jpg?w=676&ssl=1"
+                                                alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="content-one">
+                                        <div class="left-flex">
+                                            <span>
+                                                <img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                                    alt="timesOfIndia">The Times of India
+                                            </span>
+                                            <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                                driver to take blame
+                                            </p>
+                                            <span>2 hours ago</span>
+                                        </div>
+                                        <div class="right-flex">
+                                            <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/IMG_2567.jpg?resize=768%2C512&ssl=1"
+                                                alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="content-one">
+                                        <div class="left-flex">
+                                            <span><img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                                    alt="timesOfIndia">The Times of India</span>
+                                            <p>Pune Porsche accident: Cops arrest accused's grandfather for threatening
+                                                driver to take blame
+                                            </p>
+                                            <span>2 hours ago</span>
+                                        </div>
+                                        <div class="right-flex">
+                                            <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/Jemco-1.jpg?w=600&ssl=1"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="second-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="flex-box">
+                        <div class="left-flex">
+                            <div class="items">
+                                <div class="item-one">
+                                    <div class="content">
+                                        <span><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                            alt="timesOfIndia">The Times of India</span>
+                                        <p>Delhi Election 2024 Live Updates: Voter turnout at 34.37% till 1 pm in Phase 6 </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/Jemco-1.jpg?w=600&ssl=1"
+                                         alt="">
+                                    </div>
+                                </div>
+                                <div class="item-one">
+                                    <div class="content">
+                                        <span><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                            alt="timesOfIndia">The Times of India</span>
+                                        <p>Delhi Election 2024 Live Updates: Voter turnout at 34.37% till 1 pm in Phase 6 </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/Jemco-1.jpg?w=600&ssl=1"
+                                         alt="">
+                                    </div>
+                                </div>
+                                <div class="item-one">
+                                    <div class="content">
+                                        <span><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                            alt="timesOfIndia">The Times of India</span>
+                                        <p>Delhi Election 2024 Live Updates: Voter turnout at 34.37% till 1 pm in Phase 6 </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/Jemco-1.jpg?w=600&ssl=1"
+                                         alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="
+                        height:90%;
+                        width: 1.2px;
+                        background-color: white;
+                        position: absolute;
+                        left: 51%;
+                        top: 4px;">
+                        <div class="right-flex">
+                            <div class="items">
+                                <div class="item-one">
+                                    <div class="content">
+                                        <span><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                            alt="timesOfIndia">The Times of India</span>
+                                        <p>Delhi Election 2024 Live Updates: Voter turnout at 34.37% till 1 pm in Phase 6 </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/Jemco-1.jpg?w=600&ssl=1"
+                                         alt="">
+                                    </div>
+                                </div>
+                                <div class="item-one">
+                                    <div class="content">
+                                        <span><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                            alt="timesOfIndia">The Times of India</span>
+                                        <p>Delhi Election 2024 Live Updates: Voter turnout at 34.37% till 1 pm in Phase 6 </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/Jemco-1.jpg?w=600&ssl=1"
+                                         alt="">
+                                    </div>
+                                </div>
+                                <div class="item-one">
+                                    <div class="content">
+                                        <span><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpzpGFukZjkUTClDruhM41icFmuUGOM31Oj9UzPMenHQ&s"
+                                            alt="timesOfIndia">The Times of India</span>
+                                        <p>Delhi Election 2024 Live Updates: Voter turnout at 34.37% till 1 pm in Phase 6 </p>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                    <div class="image">
+                                        <img src="https://i0.wp.com/avenuemail.in/wp-content/uploads/2024/05/Jemco-1.jpg?w=600&ssl=1"
+                                         alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

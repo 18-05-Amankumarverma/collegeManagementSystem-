@@ -1,6 +1,6 @@
 <?php
 
-//include("../database/connection.php");
+include("../database/connection.php");
 
 function dataSanitize($data)
 {
@@ -17,18 +17,18 @@ if (isset($_POST['submit'])) {
     $admin_name = dataSanitize($_POST['admin_name']);
     $admin_password = dataSanitize($_POST['admin_password']);
 
-    echo $admin_name . $admin_password;
 
-    $sql = "select admin_name , admin_password from admin_login where admin_name = '$admin_name' and admin_password = '$admin_password' ";
+    $sql = "select  id , admin_name , admin_password from admin_login where admin_name = '$admin_name' and admin_password = '$admin_password' ";
 
     $result = $conn->query($sql);
 
-    if ($result->num_rows) {
+   if ($result->num_rows) {
 
         echo "data found";
         $_SESSION["is_user_loggedIn"] = true;
         $_SESSION["user_data"] = mysqli_fetch_assoc($result);
-
+        
+      
         header("location:table.php");
 
     } else {
@@ -157,13 +157,14 @@ if (isset($_POST['submit'])) {
 
     <script>
 
-        var admin_name = document.getElementById('admin_name');
-        var admin_password = document.getElementById('admin_password');
+        var admin_name = document.getElementById('username');
+        var admin_password = document.getElementById('password');
         var submit = document.getElementById('submit');
 
         submit.addEventListener('click', () => {
             if (admin_name.value.length == 0 && admin_password.value.length == 0) {
                 console.log("null value");
+                localStorage.setItem("displayName",admin_name.value);
             }
             else {
                 console.log("not null");
@@ -183,7 +184,7 @@ if (isset($_POST['submit'])) {
     
     <script>
           
-          var x = "<?php echo $admin_name ?>" ; 
+        var x = "<?php echo $admin_name ?>" ; 
         var y = "<?php echo $admin_password ?>" ;
 
         var successMessage = document.getElementById("successMessage");

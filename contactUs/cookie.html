@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: "BBC Reith Serif", Helvetica, Arial, sans-serif;
+        }
+        .parent-cookie{
+            width:400px;
+            text-align:justify;
+            background-color:#f4eded;       
+            border-radius:10px;     
+            box-shadow:0px 0px 5px #1b1b1b;
+            position:absolute;
+            bottom:0px;
+            right:0px
+        }
+        .child-cookie{
+            padding:15px;
+            padding-top:8px;
+        }
+        .child-cookie h4{
+            font-size:20px;
+            font-weight:600;
+            padding:3px 0px;
+            display:flex;
+            align-items:center;
+        }
+        .child-cookie img{
+            height:25px;
+            width:25px;
+            padding-left:10px;
+        }
+        .child-cookie p{
+            padding:8px 0px;
+            font-size:12px;
+        }
+        .accept{
+            background-color:rgb(38, 38, 209);
+            color:white;
+        }
+        .manage{
+            background-color:white;
+        }
+        button{
+            font-size:14px;
+            font-weight:600;
+            width:100%;
+            padding:10px 0px;
+            margin:8px 0px;
+            border:none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-cookie">
+        <div class="child-cookie">
+            <h4>Want a Cookie? <img src="https://cdn-icons-png.flaticon.com/512/6122/6122198.png" alt="cookie"/></h4>
+            <p>We and Selected third parties use Cookies or similar technolgies as specified in the <a href="">Cookie
+                    Policy.</a></p>
+            <p>You can Consent to the use of such technolgies by using the "Accpet" button .</p>
+            <button class="accept">Accept all Cookies</button>
+            <button class="manage">Manage Cookies</button>
+        </div>
+    </div>
+</body>
+
+</html>

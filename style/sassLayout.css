@@ -1,0 +1,425 @@
+@font-face {
+  font-family: bold;
+  src: url(font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: medium;
+  src: url(font/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: regular;
+  src: url(font/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: semiBold;
+  src: url(font/Poppins-SemiBold.ttf);
+}
+:root {
+  --primary-color: #5c45fd;
+  --first-color: #161616;
+  --second-color: #969799;
+  --third-color: #a88bff;
+  --fourth-color: #f5f5f5;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  background-color: #1B1924;
+  color: var(--fourth-color);
+}
+
+header {
+  height: 70px;
+  padding: 12px 0px;
+}
+header .logo {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  list-style-type: none;
+  padding-top: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  font-family: regular;
+  color: var(--fourth-color);
+}
+header .lets-talk {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+header .lets-talk button {
+  font-size: 15px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 38px;
+}
+header .lets-talk button a {
+  font-family: semiBold;
+  color: var(--fourth-color);
+}
+
+.landing-page {
+  padding: 70px 0px;
+}
+.landing-page .big-font h1 {
+  font-family: semiBold;
+  font-size: 60px;
+}
+.landing-page .big-font h1 span {
+  color: var(--primary-color);
+}
+.landing-page .small-font {
+  padding: 40px 0px;
+  width: 70%;
+}
+.landing-page .small-font p {
+  width: 100%;
+  font-family: regular;
+}
+.landing-page .flex-container .flex-box {
+  display: flex;
+}
+.landing-page .flex-container .flex-box .view-container {
+  width: 15%;
+}
+.landing-page .flex-container .flex-box .view-container button {
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+  border: 0.8px solid var(--primary-color);
+  background-color: transparent;
+}
+.landing-page .flex-container .flex-box .view-container button a {
+  text-decoration: none;
+  font-family: regular;
+  color: var(--fourth-color);
+}
+.landing-page .flex-container .flex-box .image-text-flex {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.landing-page .flex-container .flex-box .image-text-flex div img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+.landing-page .flex-container .flex-box .image-text-flex div img:nth-child(2) {
+  margin-left: -19px;
+}
+.landing-page .flex-container .flex-box .image-text-flex div img:nth-child(3) {
+  margin-left: -19px;
+}
+.landing-page .flex-container .flex-box .image-text-flex span {
+  display: inline-block;
+  margin-left: 20px;
+}
+.landing-page .flex-container .flex-box .image-text-flex span span {
+  font-size: 14px;
+}
+
+.trusted-by-bussiness {
+  padding: 50px 0px;
+}
+.trusted-by-bussiness .section-title {
+  padding: 30px 0px;
+}
+.trusted-by-bussiness .section-title h5 {
+  font-family: regular;
+  color: var(--fourth-color);
+  text-align: center;
+}
+.trusted-by-bussiness .company-name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.trusted-by-bussiness .company-name span {
+  border: 1px solid var(--fourth-color);
+  height: 60px;
+  width: 120px;
+  border-radius: 10px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: semiBold;
+  transition: all 0.8s;
+}
+.trusted-by-bussiness .company-name span:hover {
+  background-color: var(--fourth-color);
+  color: var(--first-color);
+}
+
+.services {
+  padding: 40px 0px;
+}
+.services .section-title h5 {
+  text-transform: uppercase;
+  font-family: semiBold;
+  font-size: 15px;
+  letter-spacing: 9.5px;
+  color: var(--second-color);
+}
+.services .section-title p {
+  color: var(--second-color);
+  font-size: 15px;
+}
+.services .services-container {
+  margin-top: 40px;
+}
+.services .services-container .service {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.services .services-container .service div {
+  border: 1px solid var(--fourth-color);
+  padding: 10px;
+  width: 30%;
+  background-color: rgba(253, 246, 246, 0.0784313725);
+  transition: all 0.8s;
+}
+.services .services-container .service div h5 {
+  font-family: semiBold;
+  padding: 10px 0px;
+  padding-bottom: 0px;
+}
+.services .services-container .service div p {
+  font-size: 14px;
+  padding: 10px 0px;
+}
+.services .services-container .service div button {
+  border: none;
+  border: 1px solid var(--fourth-color);
+  font-size: 16px;
+  color: var(--fourth-color);
+  background-color: transparent;
+  height: 34px;
+  width: 80px;
+  margin-bottom: 10px;
+}
+.services .services-container .service div:hover {
+  scale: 1.1;
+}
+
+.latest-products {
+  padding: 60px 0px;
+}
+.latest-products .section-title h5 {
+  text-transform: uppercase;
+  font-family: semiBold;
+  font-size: 15px;
+  letter-spacing: 9.5px;
+  color: var(--second-color);
+}
+.latest-products .section-title p {
+  color: var(--second-color);
+  font-size: 15px;
+  width: 50%;
+}
+.latest-products .services-container {
+  margin-top: 40px;
+}
+.latest-products .services-container .service {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.latest-products .services-container .service div {
+  border: 1px solid var(--fourth-color);
+  padding: 10px;
+  width: 30%;
+  background-color: rgba(242, 238, 238, 0.0352941176);
+  transition: all 0.8s;
+}
+.latest-products .services-container .service div h5 {
+  font-family: semiBold;
+  padding: 10px 0px;
+  padding-bottom: 0px;
+}
+.latest-products .services-container .service div p {
+  font-size: 14px;
+  padding: 10px 0px;
+}
+.latest-products .services-container .service div button {
+  border: none;
+  border: 1px solid var(--fourth-color);
+  font-size: 16px;
+  color: var(--fourth-color);
+  background-color: transparent;
+  height: 34px;
+  width: 80px;
+  margin-bottom: 10px;
+}
+.latest-products .services-container .service div:hover {
+  scale: 1.1;
+}
+
+/*
+footer{
+    border-top:1px solid white;
+    padding-top:20px;
+    width: 100%;
+    font-weight: 500;
+    padding: 30px 10px;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer .container-fluid .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footerItems {
+    transform: translateY(-28px);
+}
+
+.listHeading a {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+
+}
+
+.f-ul {
+    padding: 0px 0px 22px 0px;
+}
+
+.fa-ul li {
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 3px 0px;
+}
+
+.fa-ul li a {
+    color: white;
+}
+
+.newsLetterSubscribe h4 {
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+.newsLetterSubscribe p {
+    width: 100%;
+    line-height: 28px;
+}
+
+#newsletter {
+    margin-top: 40px;
+}
+
+#newsletter input[type="text"] {
+    height: 40px;
+    border: none;
+    width: 65%;
+    background-color: #1B1924;
+    border: 1px solid white;
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+}
+
+#newsletter input[type="submit"] {
+    height: 40px;
+    border: none;
+    padding: 8px;
+    color: #1b1b1b;
+    font-weight: 600;
+    border: 1px solid white;
+}
+
+.footerIcons ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.developerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.developerInfo div div span {
+    display: block;
+    text-align: center;
+    padding: 2px 0px;
+    font-size: 12px;
+}
+
+@media screen and (max-width:370px) {
+    footer {
+        position: unset;
+    }
+
+    footer .container-fluid {
+        width: 100%;
+        padding: 30px 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    footer .container-fluid .row {
+        display: block;
+    }
+
+    #newsletter input[type="submit"] {
+        margin-top: 15px;
+        width: 100%;
+        border: 1px solid white;
+    }
+
+    #newsletter input[type="text"] {
+        width: 100%;
+    }
+}
+
+
+}
+*//*# sourceMappingURL=sassLayout.css.map */

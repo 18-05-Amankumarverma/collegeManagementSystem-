@@ -1,6 +1,5 @@
 <?php
 include("../database/connection.php");
-
 function dataSanitize($data)
 {
     $data = trim($data);

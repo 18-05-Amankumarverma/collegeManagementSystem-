@@ -1,0 +1,297 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #292A2D;
+}
+body header {
+  background-color: #202124;
+  padding: 10px 0px;
+  border-bottom: 0.8px solid white;
+}
+body header h1 {
+  padding: 10px 0px;
+  color: white;
+}
+body header .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body header .search-container input {
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  background-color: #3C4043;
+  border-radius: 10px;
+  border: none;
+}
+body header .search-btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+body header .search-btn input {
+  height: 45px;
+  background-color: #3C4043;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  width: 40%;
+}
+body header .links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header .links-container .links {
+  width: 1200px;
+}
+body header .links-container .links ul {
+  list-style-type: none;
+  color: #bdc1c6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  font-weight: 500;
+}
+body #first-page {
+  padding: 40px 0px;
+}
+body #first-page .left-side {
+  color: white;
+  width: 100%;
+  padding: 0px 0px;
+}
+body #first-page .left-side div {
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  width: 100%;
+  padding: 5px 5px;
+}
+body #first-page .left-side div h2 {
+  border-bottom: 0.8px solid white;
+  padding: 5px 5px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 20px;
+  color: #3480EA;
+}
+body #first-page .left-side div .flex-box {
+  display: flex;
+}
+body #first-page .left-side div .flex-box .image-container {
+  width: 40%;
+}
+body #first-page .left-side div .flex-box .image-container img {
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+}
+body #first-page .left-side div .flex-box .image-container h4 {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+body #first-page .left-side div .flex-box .image-container span {
+  font-size: 12px;
+  padding: 4px 0px;
+}
+body #first-page .left-side div .flex-box .side-content {
+  width: 60%;
+  padding: 0px 15px;
+}
+body #first-page .left-side div .flex-box .side-content .content-one span:first-child {
+  font-size: 12.8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body #first-page .left-side div .flex-box .side-content .content-one span:first-child img {
+  height: 15px;
+  width: 15px;
+}
+body #first-page .left-side div .flex-box .side-content .content-one p {
+  font-size: 14px;
+  padding: 5px 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+body #first-page .left-side div .flex-box .side-content .content-one span:last-child {
+  font-size: 12px;
+}
+body #first-page .left-side div .flex-box .side-content .content-full {
+  display: flex;
+  width: 100%;
+  border-radius: 0;
+  padding: 15px 0px;
+  border-bottom: 1px solid white;
+}
+body #first-page .left-side div .flex-box .side-content .content-full .left-flex {
+  width: 70%;
+}
+body #first-page .left-side div .flex-box .side-content .content-full .right-flex {
+  width: 30%;
+}
+body #first-page .left-side div .flex-box .side-content .content-full .right-flex img {
+  width: 100%;
+}
+body #first-page .right-side {
+  color: white;
+  width: 100%;
+  padding: 0px 0px;
+}
+body #first-page .right-side div {
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  width: 100%;
+  padding: 5px 5px;
+}
+body #first-page .right-side div h2 {
+  border-bottom: 0.8px solid white;
+  padding: 5px 5px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 20px;
+  color: #3480EA;
+}
+body #first-page .right-side div .flex-box .side-content {
+  width: 100%;
+}
+body #first-page .right-side div .flex-box .side-content .content-one {
+  display: flex;
+}
+body #first-page .right-side div .flex-box .side-content .content-one .left-flex {
+  width: 70%;
+}
+body #first-page .right-side div .flex-box .side-content .content-one .left-flex span:first-child {
+  font-size: 12.8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body #first-page .right-side div .flex-box .side-content .content-one .left-flex span:first-child img {
+  height: 15px;
+  width: 15px;
+}
+body #first-page .right-side div .flex-box .side-content .content-one .left-flex p {
+  font-size: 14px;
+  padding: 5px 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+body #first-page .right-side div .flex-box .side-content .content-one .left-flex span:last-child {
+  font-size: 12px;
+}
+body #first-page .right-side div .flex-box .side-content .content-one .right-flex {
+  width: 30%;
+}
+body #first-page .right-side div .flex-box .side-content .content-one .right-flex img {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+}
+body #second-page {
+  padding: 30px 0px;
+  color: white;
+}
+body #second-page .flex-box {
+  width: 100%;
+  display: flex;
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  padding: 24px;
+}
+body #second-page .flex-box .left-flex {
+  width: 50%;
+}
+body #second-page .flex-box .left-flex .item-one {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+body #second-page .flex-box .left-flex .item-one .content {
+  width: 80%;
+}
+body #second-page .flex-box .left-flex .item-one .content span:first-child {
+  font-size: 12.8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body #second-page .flex-box .left-flex .item-one .content span:first-child img {
+  height: 15px;
+  width: 15px;
+}
+body #second-page .flex-box .left-flex .item-one .content p {
+  font-size: 16px;
+  padding: 5px 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+body #second-page .flex-box .left-flex .item-one .content span:last-child {
+  font-size: 12px;
+}
+body #second-page .flex-box .left-flex .item-one .image {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+body #second-page .flex-box .left-flex .item-one .image img {
+  width: 65%;
+  height: 70%;
+  border-radius: 10px;
+}
+body #second-page .flex-box .right-flex {
+  width: 50%;
+  padding-left: 25px;
+}
+body #second-page .flex-box .right-flex .item-one {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+body #second-page .flex-box .right-flex .item-one .content {
+  width: 80%;
+}
+body #second-page .flex-box .right-flex .item-one .content span:first-child {
+  font-size: 12.8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body #second-page .flex-box .right-flex .item-one .content span:first-child img {
+  height: 15px;
+  width: 15px;
+}
+body #second-page .flex-box .right-flex .item-one .content p {
+  font-size: 16px;
+  padding: 5px 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+body #second-page .flex-box .right-flex .item-one .content span:last-child {
+  font-size: 12px;
+}
+body #second-page .flex-box .right-flex .item-one .image {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+body #second-page .flex-box .right-flex .item-one .image img {
+  width: 65%;
+  height: 70%;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

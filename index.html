@@ -4,34 +4,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .loadingContainer {
-            height: 300px;
-            width: 300px;
-            position:absolute;
-            top:50%;
-            left:50%;
-            transform:translate(-50%,-50%);
-        }
-        img{
-            height:80%;
-            width:80%;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/sassLayout.css">
+    <link rel="stylesheet" href="style/media.css">
+    <title>SASS</title>
 </head>
+
 <body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-8">
+                    <div class="logo">
+                        <h2>Quntum-Sys.</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                        <nav>
+                            <ul>
+                                <li><a href="">Why Us</a></li>
+                                <li><a href="#services">Our Products</a></li>
+                                <li><a href="">Testimonals</a></li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="col-md-3 col-4">
+                    <div class="lets-talk">
+                        <button>
+                            <a href="./contactUs/contactUs.html">Let's talk</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div class="loadingContainer">
-        <img src="image/loading-7528_256.gif" alt="">
-    </div>
+    <section class="landing-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="big-font">
+                        <h1>We develop <span>SASS Products</span><br/> for your Bussiness<span style="display:inline-block;font-size:80px;">.</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="small-font">
+                        <p>Discover our seamless workflow as we transform Real word Problems into stunning managment software. Explore the synergy between design and developement for a pixel-perfect online experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="flex-container">
+                        <div class="flex-box">
+                            <div class="view-container">
+                                <button><a href="#services">View Work</a></button>
+                            </div>
+                            <div class="image-text-flex">
+                                <div>
+                                    <img src="https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?cs=srgb&dl=pexels-olly-874158.jpg&fm=jpg" alt="">
+                                    <img src="https://us.123rf.com/450wm/vadymvdrobot/vadymvdrobot1810/vadymvdrobot181002796/110459476-image-of-handsome-business-man-near-business-center-using-mobile-phone.jpg?ver=6" alt="">
+                                    <img src="https://t3.ftcdn.net/jpg/03/15/78/34/360_F_315783443_wbq0pd3CGdN3lLkyaVkQJVDNRVh8Dly0.jpg" alt="">
+                                </div>
+                                <span>
+                                    1000+<br/>
+                                    <span style="color:var(--second-color);margin:0px;">Satisfied Clients</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
 
-        setTimeout(function(){
-            window.location.href = "dashboard.html";
-        },4000);
+    <section class="trusted-by-bussiness">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="section-title">
+                        <h5>Trusted by 30+ Bussiness</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="company-name">
+                        <span>Amazon</span>
+                        <span>Google</span>
+                        <span>Tata Steel</span>
+                        <span>JSW</span>
+                        <span>Kunal i Technology</span>
+                        <span>Digital by Niraj</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </script>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h5>Service</h5>
+                        <h1>Excedding Expections </h1>
+                        <p>we are not just another sass company. we are path to expectional web platform</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="services-container">
+                        <div class="service">
+                            <div>
+                                <h5>Attendences Management Software </h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque, blanditiis sequi amet accusantium at nam tempore iure quidem officiis.</p>
+                                <button>View</button>
+                            </div>
+                            <div>
+                                <h5>College Managment Software</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque, blanditiis sequi amet accusantium at nam tempore iure quidem officiis.</p>
+                                <button><a href="loading.html">View</a></button>
+                            </div>
+                            <div>
+                                <h5>CRM Software</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque, blanditiis sequi amet accusantium at nam tempore iure quidem officiis.</p>
+                                <button>View</button>
+                            </div>
+                            <div>
+                                <h5>Cooding Tools</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque, blanditiis sequi amet accusantium at nam tempore iure quidem officiis.</p>
+                                <button>View</button>
+                            </div>
+                            <div>
+                                <h5>HR Tools</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, nihil. Sit dolores aliquid consectetur dolor, in atque provident maiores dolorum?</p>
+                                <button>View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-products">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h5>Work</h5>
+                    <h1>Our Latest Products </h1>
+                    <p>Discover our latest creations that showcase the power of design innoviation and digital excellence. Explore our latest work and witness the impact we bring to every project.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="services-container">
+                        <div class="service">
+                            <div>
+                                <h5>Attendences Management Software </h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque, blanditiis sequi amet accusantium at nam tempore iure quidem officiis.</p>
+                                <button>View</button>
+                            </div>
+                            <div>
+                                <h5>College Managment Software</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque, blanditiis sequi amet accusantium at nam tempore iure quidem officiis.</p>
+                                <button><a href="index.html">View</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
+        
+    <footer>
+        <div class="container-fluid" id="footer-fluid">
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="footerItems">
+                        <ul class="fa-ul">
+                            <li class="listHeading" style="padding:20px 0px;"><a href="#">info</a></li>
+                            <li><a href="#">formats</a></li>
+                            <li><a href="#">comparision</a></li>
+                            <li><a href="#">pricing</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="footerItems">
+                        <ul class="fa-ul">
+                            <li class="listHeading" style="padding:20px 0px;"><a href="#">getting started</a></li>
+                            <li><a href="#">introduction</a></li>
+                            <li><a href="#">themes</a></li>
+                            <li><a href="#">documentation</a></li>
+                            <li><a href="#">usages</a></li>
+                            <li><a href="#">elements</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="footerItems">
+                        <ul class="fa-ul">
+                            <li class="listHeading" style="padding:20px 0px;"><a href="#">resources</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">form validation</a></li>
+                            <li><a href="#">accessibility</a></li>
+                            <li><a href="#">visibility</a></li>
+                            <li><a href="#">community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="newsLetterSubscribe">
+                        <h4>NewsLetter</h4>
+                        <p>Subscribe to our newsletter for aweekly dose <br /> of news and updates related to our
+                            Products<br />and for Exclusive offers.</p>
+                        <form action="" id="newsletter">
+                            <input type="text" placeholder="Your Email" name="newsLetterSubscribeUserEmailId"
+                                id="newsLetterInput">
+                            <input type="submit" value="SUBSCRIBE" id="submit" />
+                        </form>
+                        <div class="footerIcons">
+                            <ul>
+                                <li><img src="" class="socialsIcons" /></li>
+                                <li><img src="" class="socialsIcons" /></li>
+                                <li><img src="" class="socialsIcons" /></li>
+                                <li><img src="" class="socialsIcons" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="developerInfo">
+                <div class="col-md-12">
+                    <div>
+                        <span class="copywright">Copyright under 2024</span>
+                        <span class="license">MIT License</span>
+                        <span class="developer">Designed and Developed By Quantum-Sys.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    -->
+
+    <!--bootstrap links-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
